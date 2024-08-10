@@ -1,0 +1,134 @@
+.main {
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+.title {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.featuredMembers,
+.recentDiscussions,
+.popularTopics,
+.upcomingEvents {
+  margin-bottom: 3rem;
+}
+
+.featuredMembers h2,
+.recentDiscussions h2,
+.popularTopics h2,
+.upcomingEvents h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.membersGrid {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.memberCard {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.memberCard img {
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.memberCard h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+.memberCard p {
+  font-size: 1rem;
+  color: #777;
+}
+
+.discussionList {
+  list-style: none;
+  padding: 0;
+}
+
+.discussionItem {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.discussionItem a {
+  font-size: 1.5rem;
+  color: #ff5722;
+  text-decoration: none;
+}
+
+.discussionItem a:hover {
+  text-decoration: underline;
+}
+
+.discussionItem p {
+  margin-top: 0.5rem;
+  color: #777;
+}
+
+.topicsGrid {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.topicCard {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 30%;
+}
+
+.topicCard h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+.topicCard p {
+  font-size: 1rem;
+  color: #777;
+}
+
+.eventsList {
+  list-style: none;
+  padding: 0;
+}
+
+.eventItem {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.eventItem h3 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.eventItem p {
+  margin-top: 0.5rem;
+  color: #777;
+}

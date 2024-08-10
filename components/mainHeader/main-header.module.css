@@ -1,0 +1,62 @@
+.mainHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #1d1d1d; /* Dark background for a modern look */
+  color: #1a1919; /* White text color for contrast */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+.logo {
+  width: 3rem;
+  height: 3rem;
+}
+
+.navList {
+  display: flex;
+  list-style: none;
+  gap: 2rem; /* Increased gap for better spacing */
+}
+
+.navList li {
+  position: relative;
+}
+
+.navList li::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #ff5722; /* Accent color for hover effect */
+  bottom: -4px;
+  left: 0;
+  transition: width 0.3s ease-in-out;
+}
+
+.navList li:hover::after {
+  width: 100%; /* Underline effect on hover */
+}
+
+.navList a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500; /* Slightly bolder text for emphasis */
+  transition: color 0.3s ease-in-out;
+}
+
+.navList a:hover {
+  color: #ff5722; /* Accent color on hover */
+}
+
+.navList a.active {
+  color: #ff5722; /* Accent color for active link */
+}
