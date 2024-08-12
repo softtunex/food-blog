@@ -5,3 +5,6 @@
   text-decoration: none;
   color: #fff;
 }
+a.active {
+  color: #ff5722; /* Accent color for active link */
+}

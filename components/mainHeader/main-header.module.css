@@ -56,7 +56,3 @@
 .navList a:hover {
   color: #ff5722; /* Accent color on hover */
 }
-
-.navList a.active {
-  color: #ff5722; /* Accent color for active link */
-}

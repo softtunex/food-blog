@@ -10,7 +10,7 @@ const NavLink = ({ href, children }) => {
     <Link
       href={href}
       className={`${styles.link} ${
-        pathname.startsWith("/community") ? styles.active : ""
+        pathname.startsWith(href) ? styles.active : pathname === "/" ? "" : ""
       }`}
     >
       {children}
