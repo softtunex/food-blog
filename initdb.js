@@ -9,7 +9,7 @@ const dummyMeals = [
     summary:
       "A classic Italian pasta dish made with eggs, cheese, pancetta, and pepper.",
     instructions:
-      "1. Cook the pasta. 2. Fry the pancetta. 3. Mix eggs and cheese. 4. Combine pasta with pancetta and egg mixture. 5. Serve hot.",
+      "1. Cook the pasta. \n2. Fry the pancetta. \n3. Mix eggs and cheese. \n4. Combine pasta with pancetta and egg mixture. 5. Serve hot.",
     creator: "Chef Mario",
     creator_email: "mario@example.com",
   },
@@ -19,7 +19,7 @@ const dummyMeals = [
     image: "/images/artur-rutkowski-GdTLaWamFHw-unsplash.jpg",
     summary: "Delicious vegetarian tacos filled with fresh veggies and beans.",
     instructions:
-      "1. Prepare the vegetables. 2. Warm the tortillas. 3. Assemble tacos with veggies and beans. 4. Serve with your favorite toppings.",
+      "1. Prepare the vegetables. \n2. Warm the tortillas. \n3. Assemble tacos with veggies and beans. \n4. Serve with your favorite toppings.",
     creator: "Chef Anna",
     creator_email: "anna@example.com",
   },
