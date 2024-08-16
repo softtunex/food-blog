@@ -1,20 +1,8 @@
+import { sharedMeal } from "@/lib/action";
 import styles from "./page.module.css";
 import ImageSelected from "@/components/imageRel/pick-image";
 
 export default function ShareMeal() {
-  async function sharedMeal(formData) {
-    "use server";
-    const meal = {
-      title: formData.get("title"),
-      image: formData.get("image"),
-      summary: formData.get("summary"),
-      instructions: formData.get("instructions"),
-      creator: formData.get("creator"),
-      creator_email: formData.get("creatorEmail"),
-    };
-    console.log(meal);
-  }
-
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>Share Your Favorite Meal</h1>
