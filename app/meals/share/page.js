@@ -1,12 +1,16 @@
+"use client";
 import { sharedMeal } from "@/lib/action";
 import styles from "./page.module.css";
 import ImageSelected from "@/components/imageRel/pick-image";
+import MealSubmit from "../meal-submit";
+import { useFormState } from "react-dom";
 
 export default function ShareMeal() {
+  const [state, formData] = useFormState(sharedMeal, { message: null });
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>Share Your Favorite Meal</h1>
-      <form className={styles.form} action={sharedMeal}>
+      <form className={styles.form} action={formData}>
         <div className={styles.formGroup}>
           <label htmlFor="creator">Your Name</label>
           <input
@@ -58,9 +62,8 @@ export default function ShareMeal() {
         <div className={styles.formGroup}>
           <ImageSelected />
         </div>
-        <button type="submit" className={styles.submitButton}>
-          Share Meal
-        </button>
+        {state.message && <p style={{ color: "red" }}>{state.message}</p>}
+        <MealSubmit />
       </form>
     </div>
   );
